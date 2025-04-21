@@ -1,10 +1,11 @@
-
-#!/bin/bash
-echo "Checking if /var/log/syslog exists..."
-if [[ -e /var/log/syslog ]]; then
-    echo "File exists, filtering lines starting with May..."
-    grep "^May" /var/log/syslog
-else
-    echo "File not found"
-fi
+echo "enter num"
+read num
+i=1
+fact=1
+while [ $i -le $num ]
+do
+((fact=fact*i))
+((i=i+1))
+done
+echo fact $fact
 

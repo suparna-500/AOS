@@ -1,9 +1,8 @@
-X=10
-Y=5
-if [[ $X -gt $Y ]]; then
-	echo "$X is greater than $Y"
-elif [[ $X -lt $Y ]]; then
-	echo "$X is less than $Y"
-else
-	echo "$X is equal to $Y"
+echo "enter year"
+read year
+if (( ((year % 4==0))&&((year%100!=0)) || ((year % 400==0)) ))
+then
+echo leap
+else 
+echo not leap
 fi

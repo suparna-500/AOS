@@ -1,9 +1,8 @@
-#!/bin/bash
-num=12
-if [[ $num -eq 12 ]] ; then
-	echo "Number found"
-	echo $num
+echo "enter num"
+read a
+if ((a%2==0))
+then
+echo even
 else
-	echo "Number not found"
-	echo $num
+echo odd
 fi
